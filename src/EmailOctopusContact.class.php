@@ -16,6 +16,11 @@ class EmailOctopusContact extends EmailOctopusAPI {
         return $this->request('GET', "/lists/{$this->listId}/contacts/{$emailHash}");
     }
 
+    public function get_id(string $email): ?string {
+        $contact = $this->get($email);
+        return $contact['id'] ?? null;
+    }
+
     public function create(string $email, array $fields = [], array $tags = [], string $status = 'subscribed'): array {
         $this->ensureListId();
 
