@@ -16,7 +16,7 @@ class EmailOctopusContact extends EmailOctopusAPI {
         return $this->request('GET', "/lists/{$this->listId}/contacts/{$emailHash}");
     }
 
-    public function get_id(string $email): ?string {
+    public function getId(string $email): ?string {
         $contact = $this->get($email);
         return $contact['id'] ?? null;
     }

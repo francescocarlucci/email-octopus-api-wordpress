@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: WP EmailOctopus API
- * Description: An extensible integration class for the EmailOctopus API.
+ * Description: An extensible integration framework for the EmailOctopus API.
  * Version:     0.1
  * Author:      Francesco Carlucci
  * Author URI:  https://francescocarlucci.com
